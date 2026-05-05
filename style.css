@@ -25,7 +25,7 @@ body {
   scroll-behavior: smooth;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   line-height: 1.5;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #fda085 100%);
+  background: linear-gradient(135deg, #228bb4 0%, #9d54e6 25%, #f093fb 50%, #d63c51 75%, #fda085 100%);
   background-attachment: fixed;
 }
 
@@ -59,7 +59,7 @@ ol {
 
 /* Remove default styles for buttons */
 button {
-  background: none;
+  background:var(--color-warning);
   border: none;
   cursor: pointer;
 }
@@ -158,7 +158,7 @@ textarea:not([rows]) {
 
 .btn-primary {
   background-color: var(--color-primary, #3b82f6);
-  color: rgb(130, 163, 9);
+  color: rgba(163, 127, 9, 0.705);
 }
 
 .btn-primary:hover {
@@ -169,7 +169,7 @@ textarea:not([rows]) {
 
 .btn-secondary {
   background-color: var(--color-secondary, #6b7280);
-  color: rgb(58, 161, 10);
+  color: rgb(236, 243, 233);
 }
 
 .btn-secondary:hover {
@@ -178,8 +178,8 @@ textarea:not([rows]) {
 
 .btn-outline {
   background-color: transparent;
-  border-color: var(--color-primary, #3b82f6);
-  color: var(--color-primary, #3b82f6);
+  border-color: var(--color-primary, #3beaf677);
+  color: var(--color-primary, #3bf6ae91);
 }
 
 .btn-outline:hover {
@@ -209,7 +209,7 @@ textarea:not([rows]) {
 
 .card-footer {
   padding: 1rem 1.5rem;
-  border-top: 1px solid #072869;
+  border-top: 1px solid #0dac7c;
   background-color: #f9fafb56;
 }
 
@@ -222,7 +222,7 @@ textarea:not([rows]) {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #374151;
+  color: #345c4b96;
 }
 
 .form-input,
@@ -250,7 +250,7 @@ textarea:not([rows]) {
 
 .error-message {
   font-size: 0.875rem;
-  color:#ef4444;
+  color:#75100c88;
   margin-top: 0.375rem;
 }
 
@@ -293,7 +293,7 @@ textarea:not([rows]) {
 
 /* Navigation */
 .navbar {
-  background-color:#60a5fa;
+  background-color:#60faed7e;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
 }
@@ -314,13 +314,13 @@ textarea:not([rows]) {
 
 .nav-link {
   text-decoration: none;
-  color: #375141;
+  color: #f5f7f5;
   font-weight: 500;
   transition: color 150ms ease;
 }
 
 .nav-link:hover {
-  color: var(--color-primary, #3bf6f6);
+  color: var(--color-primary, #3bf6f69c);
 }
 
 /* ============================================
@@ -419,8 +419,8 @@ textarea:not([rows]) {
 /* Print Styles */
 @media print {
   body {
-    background-color:burlywood #f0f0f0;
-    color:#079297;
+    background-color:rgba(216, 222, 135, 0.575) #f0f0f0a2;
+    color:#e2e9e9;
     font-size: 12pt;
   }
   
@@ -443,8 +443,8 @@ textarea:not([rows]) {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #1a1a2e;
-    --color-surface: #0d225ace;
+    --color-bg: #08a2b6;
+    --color-surface: #0881b1ce;
     --color-text: #aa9a98;
     --color-text-muted: #94a3b8;
   }
